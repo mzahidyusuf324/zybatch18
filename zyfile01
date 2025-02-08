@@ -1,8 +1,3 @@
 test file01 devops
 
 
-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
-
-git remote set-url origin https://<token>@github.com/<username>/<repo>
-
-git remote set-url origin https://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@github.com/mzahidyusuf324/zybatch18
