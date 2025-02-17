@@ -1,1 +1,7 @@
 sudo docker images
+sudo docker container ls
+sudo docker container ls -a
+sudo docker ps
+sudo docker ps -a
+sudo docker start brave_ritchie
+sudo docker start zealous_ramanujan
