@@ -5,3 +5,4 @@ sudo docker ps
 sudo docker ps -a
 sudo docker start brave_ritchie
 sudo docker start zealous_ramanujan
+sudo docker run -it alpine:latest sh
