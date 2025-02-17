@@ -13,10 +13,13 @@ sudo docker search mysql
 sudo docker run -d --name mycont01 -p 8100:80 nginx:latest bash
 sudo docker run -it --name mycont01 -p 8100:80 nginx:latest bash
 ip addr
-
 zy@zy-virtual-machine:~/Desktop/docker-code-files/html-js-app$ sudo docker build -t zybatch18img01 .
-
 zy@zy-virtual-machine:~/Desktop/docker-code-files/html-js-app$ sudo docker run -t zybatch18img01:latest sh
+zy@zy-virtual-machine:~/Desktop/docker-code-files/html-js-app$ sudo docker build -t mzahidyusuf/zybatch18img02 .
+REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
+zybatch18img01               latest    999b5d91fbcd   3 hours ago    192MB
+mzahidyusuf/zybatch18img02   latest    999b5d91fbcd   3 hours ago    192MB
+
 
 
 
