@@ -10,6 +10,7 @@ sudo docker exec -it nice_sinoussi sh
 sudo docker run -it nginx:latest sh
 sudo docker login
 sudo docker search mysql
+sudo docker run -d --name mycont01 -p 8100:80 nginx:latest bash
 
 
 
