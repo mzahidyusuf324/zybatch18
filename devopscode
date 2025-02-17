@@ -7,4 +7,8 @@ sudo docker start brave_ritchie
 sudo docker start zealous_ramanujan
 sudo docker run -it alpine:latest sh
 sudo docker exec -it nice_sinoussi sh
+sudo docker run -it nginx:latest sh
+sudo docker login
+
+
 
