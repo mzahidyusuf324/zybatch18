@@ -11,6 +11,7 @@ sudo docker run -it nginx:latest sh
 sudo docker login
 sudo docker search mysql
 sudo docker run -d --name mycont01 -p 8100:80 nginx:latest bash
+sudo docker run -it --name mycont01 -p 8100:80 nginx:latest bash
 
 
 
