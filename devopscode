@@ -14,5 +14,9 @@ sudo docker run -d --name mycont01 -p 8100:80 nginx:latest bash
 sudo docker run -it --name mycont01 -p 8100:80 nginx:latest bash
 ip addr
 
+zy@zy-virtual-machine:~/Desktop/docker-code-files/html-js-app$ sudo docker build -t zybatch18img01 .
+
+zy@zy-virtual-machine:~/Desktop/docker-code-files/html-js-app$ sudo docker run -t zybatch18img01:latest sh
+
 
 
