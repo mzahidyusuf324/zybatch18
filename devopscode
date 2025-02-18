@@ -23,5 +23,16 @@ sudo docker history 74cc54e27dc4
 sudo docker inspect aded1e1a5b37
 
 
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fdebian+package
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+
+sudo minikube start --force
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+
+
 
 
