@@ -20,6 +20,8 @@ REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
 zybatch18img01               latest    999b5d91fbcd   3 hours ago    192MB
 mzahidyusuf/zybatch18img02   latest    999b5d91fbcd   3 hours ago    192MB
 
+sudo docker history 74cc54e27dc4
+
 
 
 
