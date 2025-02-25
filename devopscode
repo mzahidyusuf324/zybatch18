@@ -50,5 +50,6 @@ sudo minikube status
 
 sudo kubectl get po
 
+minikube start --driver=docker
 
 
