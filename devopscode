@@ -74,4 +74,4 @@ minikube stop
 minikube delete
 minikube status
 minikube start
-
+minikube ip
