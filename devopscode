@@ -28,6 +28,9 @@ https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fdebia
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
 
+zy@zy-VMware-Virtual-Platform:~$ sudo usermod -aG docker $USER && newgrp docker
+zy@zy-VMware-Virtual-Platform:~$ minikube start --driver=docker
+
 sudo minikube start --force
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
