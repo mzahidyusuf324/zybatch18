@@ -52,4 +52,5 @@ sudo kubectl get po
 
 minikube start --driver=docker
 
+ubectl version --client --output=yaml
 
