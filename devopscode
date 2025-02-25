@@ -55,4 +55,16 @@ minikube start --driver=docker
 kubectl version --client
 ubectl version --client --output=yaml
 
+zy@zy-VMware-Virtual-Platform:~$ kubectl version --client --output=yaml
+clientVersion:
+  buildDate: "2025-02-12T21:26:09Z"
+  compiler: gc
+  gitCommit: 67a30c0adcf52bd3f56ff0893ce19966be12991f
+  gitTreeState: clean
+  gitVersion: v1.32.2
+  goVersion: go1.23.6
+  major: "1"
+  minor: "32"
+  platform: linux/amd64
+kustomizeVersion: v5.5.0
 
