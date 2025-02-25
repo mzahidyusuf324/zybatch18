@@ -75,3 +75,23 @@ minikube delete
 minikube status
 minikube start
 minikube ip
+minikube ssh
+
+kubectl version
+
+kubectl cluster-info
+Kubernetes control plane is running at https://192.168.49.2:8443
+CoreDNS is running at https://192.168.49.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+kubectl create deployment nginx --image=nginx
+deployment.apps/nginx created
+
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get deployment
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+nginx   1/1     1            1           16m
+zy@zy-VMware-Virtual-Platform:~$ kubectl get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+nginx-5869d7778c-qst5m   1/1     Running   0          17m
+zy@zy-VMware-Virtual-Platform:~$ 
