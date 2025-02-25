@@ -69,3 +69,9 @@ clientVersion:
   platform: linux/amd64
 kustomizeVersion: v5.5.0
 
+kubectl version --client
+minikube stop
+minikube delete
+minikube status
+minikube start
+
