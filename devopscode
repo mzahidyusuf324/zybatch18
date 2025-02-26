@@ -96,4 +96,5 @@ NAME                     READY   STATUS    RESTARTS   AGE
 nginx-5869d7778c-qst5m   1/1     Running   0          17m
 zy@zy-VMware-Virtual-Platform:~$ 
 
+sudo docker run --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01 -skip-limits-check -agree-to-sap-license
 
