@@ -129,6 +129,82 @@ zy@zy-VMware-Virtual-Platform:~$ kubectl logs nginx-5869d7778c-p4j7q    -----thi
 
 zy@zy-VMware-Virtual-Platform:~$ kubectl logs -h
 
+kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx.yaml
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl create -f nginx.yaml
+deployment.apps/nginx-deployment created
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get deployments
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+nginx              1/1     1            1           111m
+nginx-deployment   4/4     4            4           53s
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl expose deployment nginx-deployment --type=NodePort --port=80
+service/nginx-deployment exposed
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get services
+
+zy@zy-VMware-Virtual-Platform:~$ minikube service nginx-deployment --url
+http://192.168.49.2:31345
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get pod
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx                               1/1     Running   0          46m
+nginx-5869d7778c-p4j7q              1/1     Running   0          119m
+nginx-deployment-86c57bc6b8-4nzbb   1/1     Running   0          9m48s
+nginx-deployment-86c57bc6b8-gt8qs   1/1     Running   0          9m48s
+nginx-deployment-86c57bc6b8-jwc9p   1/1     Running   0          9m48s
+nginx-deployment-86c57bc6b8-zrvtl   1/1     Running   0          9m48s
+
+minikube dashboard
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl run nginx-3 --image=nginx
+pod/nginx-3 created
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl delete pods ngnix-3
+
+zy@zy-VMware-Virtual-Platform:~$ sudo apt install gedit
+
+zy@zy-VMware-Virtual-Platform:~$ gedit podspec.yaml
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl create -f podspec.yaml
+pod/nginx-4 created
+y@zy-VMware-Virtual-Platform:~$ kubectl describe pod nginx-4
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl scale deployment nginx-deployment --replicas=4
+deployment.apps/nginx-deployment scaled
+
+y@zy-VMware-Virtual-Platform:~$ kubectl delete pod nginx-deployment-86c57bc6b8-zrvtl
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl expose deployment web-app --port=80
+service/web-app exposed
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get services
+NAME               TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+kubernetes         ClusterIP   10.96.0.1        <none>        443/TCP        5d5h
+nginx              NodePort    10.108.141.148   <none>        80:31521/TCP   6h42m
+nginx-deployment   NodePort    10.98.46.198     <none>        80:31345/TCP   4h47m
+web-app            ClusterIP   10.98.228.178    <none>        80/TCP         40s
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl expose deployment web-app --name=web-app-nodeport --port=80 --type=NodePort
+service/web-app-nodeport exposed
+
+zy@zy-VMware-Virtual-Platform:~$ minikube service web-app-nodeport --url
+http://192.168.49.2:31858
+zy@zy-VMware-Virtual-Platform:~$ kubectl expose deployment web-app --name=web-app-loadbalancer --port=80 --type=LoadBalancer
+
+service/web-app-loadbalancer exposed
+zy@zy-VMware-Virtual-Platform:~$ ^C
+zy@zy-VMware-Virtual-Platform:~$ kubectl get services
+NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+kubernetes             ClusterIP      10.96.0.1        <none>        443/TCP        5d5h
+nginx                  NodePort       10.108.141.148   <none>        80:31521/TCP   6h54m
+nginx-deployment       NodePort       10.98.46.198     <none>        80:31345/TCP   4h59m
+web-app                ClusterIP      10.98.228.178    <none>        80/TCP         11m
+web-app-loadbalancer   LoadBalancer   10.106.85.23     <pending>     80:32147/TCP   30s
+web-app-nodeport       NodePort       10.96.51.55      <none>        80:31858/TCP   7m32s
+zy@zy-VMware-Virtual-Platform:~$ 
+
 
 sudo docker run --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01 -skip-limits-check -agree-to-sap-license
 
