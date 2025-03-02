@@ -96,10 +96,8 @@ Kubernetes control plane is running at https://192.168.49.2:8443
 CoreDNS is running at https://192.168.49.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
-
 kubectl create deployment nginx --image=nginx
 deployment.apps/nginx created
-
 
 zy@zy-VMware-Virtual-Platform:~$ kubectl get deployment
 NAME    READY   UP-TO-DATE   AVAILABLE   AGE
@@ -108,6 +106,29 @@ zy@zy-VMware-Virtual-Platform:~$ kubectl get pods
 NAME                     READY   STATUS    RESTARTS   AGE
 nginx-5869d7778c-qst5m   1/1     Running   0          17m
 zy@zy-VMware-Virtual-Platform:~$ 
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl expose deployment nginx --type=NodePort --port=80
+service/nginx exposed
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl get service
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP        4d22h
+nginx        NodePort    10.111.97.183   <none>        80:31201/TCP   72s
+
+zy@zy-VMware-Virtual-Platform:~$ minikube service nginx --url
+http://192.168.49.2:31201
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl delete service nginx
+service "nginx" deleted
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl delete deployment nginx
+deployment.apps "nginx" deleted
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl logs nginx-5869d7778c-p4j7q    -----this is pod
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+
+zy@zy-VMware-Virtual-Platform:~$ kubectl logs -h
+
 
 sudo docker run --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01 -skip-limits-check -agree-to-sap-license
 
