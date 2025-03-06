@@ -205,6 +205,10 @@ web-app-loadbalancer   LoadBalancer   10.106.85.23     <pending>     80:32147/TC
 web-app-nodeport       NodePort       10.96.51.55      <none>        80:31858/TCP   7m32s
 zy@zy-VMware-Virtual-Platform:~$ 
 
+https://www.youtube.com/@RaghavPal/playlists
+
+jenkins
+e261a5e2709c4f9abc4f325f912e6cfe
 
 sudo docker run --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01 -skip-limits-check -agree-to-sap-license
 
