@@ -206,5 +206,11 @@ web-app-nodeport       NodePort       10.96.51.55      <none>        80:31858/TC
 zy@zy-VMware-Virtual-Platform:~$ 
 
 
+jenkins
+/home/zy/.jenkins/secrets/initialAdminPassword
+78e8c7d08b3540cf9e1f3b7b0307cfe8
+http://localhost:8080
+sudo apt-get install openjdk-8-jdk
+
 sudo docker run --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01 -skip-limits-check -agree-to-sap-license
 
