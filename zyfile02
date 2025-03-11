@@ -81,6 +81,19 @@ tmpfs           7.4G     0  7.4G   0% /dev/shm
 tmpfs           5.3M  8.2k  5.3M   1% /run/lock
 tmpfs           1.5G  136k  1.5G   1% /run/user/1000
 
+ps -aux
+
+top
+htop
+
+ps -aux | grep thisisbash
+
+kill -9 16169
+pkill -f thisisbash
+
+sudo systemctl restrat apache2
+
+
 
 
 
