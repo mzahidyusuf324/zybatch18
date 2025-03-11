@@ -2,3 +2,85 @@ this is test file02
 add 2nd line for testing remote confilicts
 add third line by network team
 https://www.youtube.com/watch?v=rrw-Pv3rc0E&list=PL0tP8lerTbX3eUtBFS0Ir4_aFqKuXWjYZ
+ls
+ls -l       list with authrization
+ls -la
+pwd        print working directory
+cd /    jump into the root directory
+sudo passwd zy
+passwd
+sudo apt install finger
+finger zy
+man finger 
+man man
+whatis finger
+finger (1)  - user information lookup program
+which finger
+/usr/bin/finger
+whereis finger
+finger: /usr/bin/finger /usr/share/man/man1/finger.1.gz
+
+sudo find / -name "jenkins"
+/var/lib/jenkins
+/var/cache/jenkins
+/var/log/jenkins
+/usr/share/jenkins
+/usr/share/doc/jenkins
+find: ‘/run/user/1000/doc’: Permission denied
+find: ‘/run/user/1000/gvfs’: Permission denied
+/home/zy/Documents/jenkins
+/etc/logrotate.d/jenkins
+/etc/init.d/jenkins
+/etc/default/jenkins
+
+
+sudo find . -type f - name ".*"              -for hidden file
+
+sudo find . -perm /a=x                        -for executable file 
+
+sudo apt install net-tools
+ifconfig
+
+ip address | grep eth0 | grep inet
+
+ip address | grep eth0 | grep inet | awk '{print $2}' 
+
+cat /etc/resolv.conf
+
+resolvectl status
+
+traceroute paksuzuki.com.pk
+
+netstat
+
+netstat -tulpn
+
+ss
+ss -tulpn
+
+sudo ufw allow 80
+sudo ufw status
+sudo ufw enable
+
+uname -a
+Linux zy-VMware-Virtual-Platform 6.11.0-19-generic #19~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Feb 17 11:51:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+sudo apt install neofetch
+neofetch
+
+sudo apt install ncal
+cal
+
+free
+
+df -H
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.5G  2.3M  1.5G   1% /run
+/dev/sda2        32G   21G  9.2G  70% /
+tmpfs           7.4G     0  7.4G   0% /dev/shm
+tmpfs           5.3M  8.2k  5.3M   1% /run/lock
+tmpfs           1.5G  136k  1.5G   1% /run/user/1000
+
+
+
+
