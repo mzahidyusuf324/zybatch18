@@ -1,1 +1,8 @@
 https://www.youtube.com/watch?v=WFEDZBY8GrY&list=PL16Q_7gBi503eNczqimDyxG2Y7vF7E-Oa&index=6
+https://www.youtube.com/watch?v=QxPy6J4_iws&list=PLS0spxc8nUsBAMA1dNcZtArTHB5AOPFGK&index=5
+
+sudo nano /etc/apt/sources.list
+sudo add-apt-repository ppa:tualatrix/ppa 
+sudo apt-get install vlc
+sudo apt-get install python
+
