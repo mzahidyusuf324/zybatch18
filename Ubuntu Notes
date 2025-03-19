@@ -1,1 +1,7 @@
 https://www.youtube.com/watch?v=WFEDZBY8GrY&list=PL16Q_7gBi503eNczqimDyxG2Y7vF7E-Oa&index=6
+
+sudo nano /etc/apt/sources.list
+sudo add-apt-repository ppa:tualatrix/ppa  
+sudo apt-get install paython
+sudo apt-get install vlc
+
