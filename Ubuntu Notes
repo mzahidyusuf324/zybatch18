@@ -6,3 +6,17 @@ sudo apt-get install paython
 sudo apt-get install vlc
 
 https://www.youtube.com/watch?v=i_P2EaOhW8M&list=PLS0spxc8nUsBAMA1dNcZtArTHB5AOPFGK&index=6
+sudo passwd root
+sudo apt-get install lightdm
+
+zy@zy-virtual-machine:/etc/lightdm$ ls
+lightdm.conf.d  users.conf
+
+download first from https://gkeveryexam.blogspot.com/2020/06/ubuntu-lightdm-file.html
+
+zy@zy-virtual-machine:~/Downloads$ ls
+lightdm.conf
+zy@zy-virtual-machine:~/Downloads$ sudo mv lightdm.conf /etc/lightdm/
+
+zy@zy-virtual-machine:/etc/lightdm$ ls
+lightdm.conf  lightdm.conf.d  users.conf
