@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=FX322RVNGj4&list=PLEiEAq2VkUUKGrfcoNYRgqam5YBERN8xa
+https://www.youtube.com/watch?v=hgqBGNPlLlU&list=PLhW3qG5bs-L8T-0JT464rkIvnUz5q4CQC
+
 installing java
 download https://www.oracle.com/pk/java/technologies/downloads/#java21
 sudo dpkg -i jdk-21_linux-x64_bin.deb 
@@ -30,5 +33,18 @@ sudo gedit /etc/environment
 bin  conf  include  jmods  legal  lib  LICENSE  man  README  release
 setting of JAVA_HOME
 JAVA_HOME="usr/lib/jvm/jdk-21.0.6-oracle-x64"
+┌─[zy@zy-virtual-machine]─[~/Downloads]
+└──╼ $source /etc/environment
+└──╼ $echo $JAVA_HOME   (Case Sensitive)
+/usr/lib/jvm/jdk-21.0.6-oracle-x64
+
+
+https://www.jenkins.io/download/
+creat folder like desktop-tools-jenkns and copy jenkins.war
+java -jar jenkins.war
+sudo gedit /home/zy/.jenkins/secrets/initialAdminPassword
+91f51fbe6757419fac6324ac99bd3747
+
+http://localhost:8080/
 
 
