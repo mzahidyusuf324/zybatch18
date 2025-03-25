@@ -25,6 +25,10 @@ javac 21.0.6
 There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/jdk-21.0.6-oracle-x64/bin/java
 Nothing to configure.
 
+sudo gedit /etc/environment
 └──╼ $ls /usr/lib/jvm/jdk-21.0.6-oracle-x64
 bin  conf  include  jmods  legal  lib  LICENSE  man  README  release
+setting of JAVA_HOME
+JAVA_HOME="usr/lib/jvm/jdk-21.0.6-oracle-x64"
+
 
