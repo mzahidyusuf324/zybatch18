@@ -40,3 +40,28 @@ http://localhost:8080/    ---firefox start jenkins
 
 running jenkins standalone (jetty/winstone) vs on Tomcat
 tomcat5 and above and java7 and above
+
+https://tomcat.apache.org/  -download tomcat and unzip in specific location
+copy jenkins.war file inside tomcat/webapps folder
+goto tomcat/bin directory
+
+make all file executable 
+┌─[zy@zy-virtual-machine]─[~/Desktop/tools/tomcat/bin]
+└──╼ $chmod +x *.sh
+
+Start tomcat 
+┌─[✗]─[zy@zy-virtual-machine]─[~/Desktop/tools/tomcat/bin]
+└──╼ $./startup.sh 
+verify that tomcat is started using
+http://localhost:8080/    ---tomcat startup page
+http://localhost:8080/jenkins --jenkins login page ---jenkins is runing inisde tomcat server
+
+when tomcat is running on default port8080 we can run jenkins(standalone) on different port using --httpPort=9090
+┌─[zy@zy-virtual-machine]─[~/Desktop/tools/jenkins]
+└──╼ $jave -jar jenkins.war --httpPort=9090
+default login id :admin
+
+
+
+
+
