@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=89yWXXIOisk&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG
+
 installing java
 download https://www.oracle.com/pk/java/technologies/downloads/#java21
 sudo dpkg -i jdk-21_linux-x64_bin.deb 
@@ -31,4 +33,10 @@ bin  conf  include  jmods  legal  lib  LICENSE  man  README  release
 setting of JAVA_HOME
 JAVA_HOME="usr/lib/jvm/jdk-21.0.6-oracle-x64"
 
+[jenkins]
+┌─[zy@zy-virtual-machine]─[~/Desktop/tools/jenkins]
+└──╼ $java -jar jenkins.war
+http://localhost:8080/    ---firefox start jenkins
 
+running jenkins standalone (jetty/winstone) vs on Tomcat
+tomcat5 and above and java7 and above
