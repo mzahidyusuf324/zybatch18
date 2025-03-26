@@ -52,6 +52,7 @@ make all file executable
 Start tomcat 
 ┌─[✗]─[zy@zy-virtual-machine]─[~/Desktop/tools/tomcat/bin]
 └──╼ $./startup.sh 
+./shutdown.sh
 verify that tomcat is started using
 http://localhost:8080/    ---tomcat startup page
 http://localhost:8080/jenkins --jenkins login page ---jenkins is runing inisde tomcat server
