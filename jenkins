@@ -32,6 +32,11 @@ sudo gedit /etc/environment
 bin  conf  include  jmods  legal  lib  LICENSE  man  README  release
 setting of JAVA_HOME
 JAVA_HOME="usr/lib/jvm/jdk-21.0.6-oracle-x64"
+┌─[zy@zy-virtual-machine]─[~/Desktop/tools/tomcat/bin]
+└──╼ $echo $JAVA_HOME
+/usr/lib/jvm/jdk-21.0.6-oracle-x64
+
+https://www.jenkins.io/download/
 
 [jenkins]
 ┌─[zy@zy-virtual-machine]─[~/Desktop/tools/jenkins]
@@ -62,7 +67,17 @@ when tomcat is running on default port8080 we can run jenkins(standalone) on dif
 └──╼ $jave -jar jenkins.war --httpPort=9090
 default login id :admin
 
+to move jenkins home dir to location has enough space first create JenkinsHome directory
+┌─[zy@zy-virtual-machine]─[~/Desktop/tools/jenkins/JenkinsHome]
+└──╼ $
+copy all files from /.jenkins foldert to ~/Desktop/tools/jenkins/JenkinsHome
 
-
+set environment 
+sudo gedit /etc/environment
+not working JENKINS_HOME="/home/zy/Desktop/tools/jenkins/JenkinsHome"
+export JENKINS_HOME=/home/zy/Desktop/tools/jenkins/JenkinsHome/
+┌─[zy@zy-virtual-machine]─[~]
+└──╼ $echo $JENKINS_HOME
+/home/zy/Desktop/tools/jenkins/JenkinsHome/
 
 
