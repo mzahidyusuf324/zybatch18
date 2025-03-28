@@ -1,17 +1,52 @@
 https://www.youtube.com/watch?v=xKaQHBbtaX0
-
 https://www.youtube.com/watch?v=H1v1R3AePnA&list=PLR2GZaVdl5BvI82a_po9L9tFHraV4p81j
-
 https://www.youtube.com/watch?v=v3iUx2SNspY
-
 https://www.youtube.com/watch?v=8uQN2DrTVeY
-
 https://www.youtube.com/watch?v=cKEf8H9cQGM
-
 https://www.youtube.com/watch?v=xKaQHBbtaX0&t=571s
-
 https://www.youtube.com/watch?v=3CaG2GI1kn0
-
 https://www.youtube.com/watch?v=-ze0n0Vpu4Y
-
 https://www.youtube.com/watch?v=B9fGYDM_TU4
+
+┌──(kali㉿kali)-[~]
+└─$ nmap suzukifamily.com.pk
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-28 16:31 EDT
+
+─(kali㉿kali)-[~]
+└─$ msfconsole
+Metasploit tip: Tired of setting RHOSTS for modules? Try globally setting it 
+with setg RHOSTS x.x.x.x
+
+google search
+site:suzukifamily.com.pk "login"
+site:paksuzuki.com.pk filetype=pdf
+site:paksuzuki.com.pk intitle:sales
+site:suzukifamily.com.pk inurl:sales
+site:suzukifamily.com.pk intext:login
+site:youtube.com "passwords"
+
+https://www.exploit-db.com/google-hacking-database
+https://who.is/
+
+┌──(kali㉿kali)-[~]
+└─$ whois paksuzuki.com.pk   
+# WHOIS .PK Domains (PKNIC)
+
+┌──(kali㉿kali)-[~]
+└─$ host paksuzuki.com.pk
+paksuzuki.com.pk has address 104.21.63.150
+paksuzuki.com.pk has address 172.67.147.32
+
+──(kali㉿kali)-[~]
+└─$ host -t ns pearlfoodind.com   
+pearlfoodind.com name server ns1.fatcow.com.
+pearlfoodind.com name server ns2.fatcow.com.
+
+──(kali㉿kali)-[~]
+└─$ host -t ns microsoft.com   
+microsoft.com name server ns2-39.azure-dns.net.
+microsoft.com name server ns4-39.azure-dns.info.
+
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ └─$ host -t mx paksuzuki.com.pk
