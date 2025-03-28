@@ -50,3 +50,61 @@ microsoft.com name server ns4-39.azure-dns.info.
                                                                              
 ┌──(kali㉿kali)-[~]
 └─$ └─$ host -t mx paksuzuki.com.pk
+
+└─$ nslookup microsoft.com   
+Server:         192.168.10.1
+Address:        192.168.10.1#53
+
+┌──(kali㉿kali)-[~]
+└─$ nslookup              
+> set type=ns
+> microsoft.com
+Server:         192.168.10.1
+Address:        192.168.10.1#53
+
+> set type=AAAA
+> paksuzuki.com.pk
+
+> set type=CNAME
+> paksuzuki.com.pk
+
+──(kali㉿kali)-[~]
+└─$ dig pearfoodind.com 
+
+                                                               
+┌──(kali㉿kali)-[~]
+└─$ dig pearfoodind.com -t AAAA 
+
+                                                                
+┌──(kali㉿kali)-[~]
+└─$ dig pearfoodind.com -t SOA
+
+                                                                
+┌──(kali㉿kali)-[~]
+└─$ dig pearfoodind.com -t CNAME
+
+site:linkedin.com/in working at "byd"
+
+┌──(kali㉿kali)-[~]
+└─$ sherlock williamhgates  
+
+add on ins 
+Wappalyzer
+
+builtwith.com
+
+┌──(kali㉿kali)-[~]
+└─$ whatweb microsoft.com  
+                                                                           
+┌──(kali㉿kali)-[~]
+└─$ subfinder -d microsoft.com
+                                                                            
+┌──(kali㉿kali)-[~]
+└─$ subfinder -d suzukifamily.com.pk
+
+
+
+https://www.youtube.com/watch?v=2eLJNBroFrg&t=49s
+https://www.youtube.com/watch?v=Zdk01t_VTOA
+https://www.youtube.com/watch?v=J8odohybOIM
+https://www.youtube.com/watch?v=Y0cnFpz_X2c
